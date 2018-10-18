@@ -1,0 +1,14 @@
+[Unit]
+Description=Gollum wiki server
+After=network.target
+
+[Service]
+Type=simple
+User=gollumuser
+Group=gollumuser
+ExecStart=/home/gollumuser/.anyenv/envs/rbenv/shims/gollum /home/gollumuser/gollum-work/repos --config /home/gollumuser/gollum-work/config.rb
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
+
