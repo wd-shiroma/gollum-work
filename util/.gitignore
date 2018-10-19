@@ -1,5 +1,0 @@
-node_modules/
-javascript/*
-!javascript/main.js
-style/*
-!style/main.scss

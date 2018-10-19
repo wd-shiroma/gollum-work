@@ -1,3 +1,11 @@
 mastodon/stored.db
 config.rb
 repos/*
+
+util/node_modules/
+util/javascript/*
+!util/javascript/main.js
+util/style/*
+!util/style/main.scss
+!util/style/variables.scss
+
