@@ -85,7 +85,7 @@ body {
         padding: 0;
     }
 
-    p>code, .highlight {
+    :not(.highlight)>code, .highlight {
         background-color: lighten($black, 20%);
         border: 1px solid darken($white, 50%);
     }
