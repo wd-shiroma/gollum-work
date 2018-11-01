@@ -1,0 +1,63 @@
+@import 'variables';
+
+#wiki-content {
+    color: $primary-text-color;
+
+    #wiki-body {
+        margin: 0;
+    }
+
+    h1, h2, h3, h4 {
+        color: $secondary-text-color;
+    }
+
+    .markdown-body {
+        margin: 0px 30px;
+        padding: 0;
+    }
+
+    :not(.highlight)>code, .highlight {
+        background-color: lighten($black, 20%);
+        border: 1px solid darken($white, 50%);
+    }
+
+    blockquote {
+        background-color: lighten($ui-base-color, 10%);
+        font-family: serif;
+        color: lighten($ui-base-color, 60%);
+    }
+
+    a {
+        color: $link-text-color;
+    }
+
+    .toc {
+        background-color: $ui-secondary-color;
+        
+        .toc-title {
+            color: $dark-text-color;
+            border-bottom: 1px solid $dark-text-color;
+        }
+
+        a {
+            color: darken($link-text-color, 50%);
+        }
+
+        ul {
+            list-style-type: lower-roman;
+            color: $black;
+            margin: 0px 0.5em;
+        }
+    }
+
+    ul, ol {
+        margin: 0;
+    }
+
+    hr {
+        margin-block: 0.5em 0em;
+        border: 1px dashed $ui-base-color;
+        height: 0px;
+        background: none;
+    }
+}

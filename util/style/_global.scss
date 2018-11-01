@@ -1,0 +1,15 @@
+@import 'variables';
+
+html, body {
+    background-color: $ui-base-color;
+}
+
+body {
+    margin: 4em 0em;
+}
+
+.emoji {
+    vertical-align: middle;
+    height: 1em;
+    width: 1em;
+}

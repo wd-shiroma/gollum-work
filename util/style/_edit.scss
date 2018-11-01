@@ -1,0 +1,23 @@
+@import 'variables';
+
+#gollum-editor-help {
+    color: $primary-text-color;
+    text-shadow: none;
+
+    li a {
+        text-shadow: none;
+        &.selected {
+            background: lighten($ui-base-lighter-color, 10%);
+        }
+    }
+
+    #gollum-editor-help-list {
+        background: $ui-base-lighter-color;
+        border-left: 1px solid $white;
+    }
+
+    #gollum-editor-help-wrapper {
+        border-top: 1px solid $white;
+        background: $ui-base-lighter-color;
+    }
+}

@@ -1,0 +1,59 @@
+@import 'variables';
+
+#wiki-wrapper {
+    background-color: $ui-base-lighter-color;
+    padding: 20px;
+
+    #head {
+        margin: 0em 0em 1.5em 0em;
+        h1 {
+            color: $secondary-text-color;
+            padding: 0.3em 0em;
+        }
+        .actions {
+            display: none;
+            background-color: $ui-base-color;
+            position: absolute;
+            top: 9em;
+            right: 6em;
+            max-width: 100%;
+            border: 1px solid $ui-base-lighter-color;
+            z-index: 100;
+            
+            li {
+                margin: 0.6em;
+            }
+        }
+        .menu-action {
+            vertical-align: middle;
+            display: block;
+            padding: 0.8em;
+            float: right;
+            background-color: $ui-highlight-color;
+            border-radius: 1.5em;
+            cursor: pointer;
+            text-align: center;
+            color: $primary-text-color;
+            font-weight: bold;
+
+            .burger {
+                vertical-align: middle;
+                margin: auto auto;
+                width: 1.5em;
+                height: 5px;
+                background-color: $primary-text-color;
+            }
+
+            &:hover {
+                background-color: lighten($ui-highlight-color, 10%);
+            }
+            &:active {
+                background-color: $ui-highlight-color;
+            }
+        }
+    }
+    #footer {
+        margin: 1em 0em 0em 0em;
+    }
+}
+

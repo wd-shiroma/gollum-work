@@ -7,5 +7,5 @@ util/javascript/*
 !util/javascript/main.js
 util/style/*
 !util/style/main.scss
-!util/style/variables.scss
+!util/style/_*.scss
 
